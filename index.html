@@ -10,6 +10,77 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <style>
+        .img-box {
+            width: 285px;
+            height: 400px;
+            margin: 10px;
+            border-radius: 20px;
+            background-image: url(/dist/images/bedroom.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: width 0.5s;
+        }
+
+        .img-box:nth-child(2) {
+            background-image: url(/dist/images/livingroom.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img-box:nth-child(3) {
+            background-image: url(/dist/images/kitchen.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img-box:nth-child(4) {
+            background-image: url(/dist/images/bathroom.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* .img-box p .title {
+            color: black;
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+            opacity: 0;
+            transition: bottmom 0.5s;
+        }
+
+        .img-box p .desc {
+            padding-top: 10px;
+            color: black;
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+            opacity: 0;
+            transition: bottmom 0.5s;
+        } */
+
+        .img-box .hover-card {
+            background-color: #1C1C27;
+            position: absolute;
+            bottom: 0;
+            opacity: 0;
+            transition: bottom 0.5s;
+            width: 100%;
+            border-radius: 20px;
+            height: 110px;
+        }
+
+        .img-box:hover {
+            width: 400px;
+            cursor: pointer;
+        }
+
+        .img-box:hover .hover-card {
+            opacity: 1;
+        }
+    </style>
+
     <title>AekiShop - Furniture Marketplace Landing Page</title>
 </head>
 
@@ -111,7 +182,7 @@
                         </button>
                     </div>
 
-                    <div class="flex lg:pt-20 pt-10 lg:gap-7">
+                    <div class="flex lg:pt-20 pt-10 lg:gap-7 w-auto">
                         <img src="dist/images/logoipsum1.svg" alt="" class="w-[85px] lg:w-auto">
                         <img src="dist/images/logoipsum2.svg" alt="" class="w-[95px] lg:w-auto">
                         <img src="dist/images/logoipsum3.svg" alt="" class="w-[85px] lg:w-auto">
@@ -243,7 +314,7 @@
         </section>
         <section class="container lg:max-w-screen-2xl lg:px-14">
             <div class="my-32">
-                <div class="text-center ">
+                <div class="text-center mb-14">
                     <p class="text-primary lg:text-xl text-sm font-semibold pb-2">Get Inspired</p>
                     <p class="lg:text-4xl text-2xl font-semibold pb-2">Room Collections</p>
                     <p class="lg:text-base text-sm font-normal text-grey">Find the interior designs that we recommend
@@ -251,42 +322,56 @@
                         make your room more comfortable
                     </p>
                 </div>
-                <div class="flex pt-14">
-                    <div class="w-full relative">
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                            <div class="relative mx-auto h-auto overflow-hidden rounded-lg w-[285px]">
-                                <img src="dist/images/bedroom.png" alt="image"
-                                    class="w-full h-auto relative z-0 rounded-lg transition-all duration-300 hover:scale-110">
+                <div class="lg:flex items-center justify-center">
+                    <div class="img-box">
+                        <div class="hover-card p-7 flex justify-between">
+                            <div class="flex flex-col justify-center space-y-2">
+                                <p class="text-[#DDDDDD] text-xl font-semibold">Living Room</p>
+                                <p class="text-gray text-base font-normal">120 Collection</p>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <p class="text-primary">View Details</p>
+                                <img src="dist/images/arrow.svg" alt="" class="w-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <div class="hover-card p-7 flex justify-between">
+                            <div class="flex flex-col justify-center space-y-2">
+                                <p class="text-[#DDDDDD] text-xl font-semibold">Living Room</p>
+                                <p class="text-gray text-base font-normal">120 Collection</p>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <p class="text-primary">View Details</p>
+                                <img src="dist/images/arrow.svg" alt="" class="w-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <div class="hover-card p-7 flex justify-between">
+                            <div class="flex flex-col justify-center space-y-2">
+                                <p class="text-[#DDDDDD] text-xl font-semibold">Living Room</p>
+                                <p class="text-gray text-base font-normal">120 Collection</p>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <p class="text-primary">View Details</p>
+                                <img src="dist/images/arrow.svg" alt="" class="w-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-box">
+                        <div class="hover-card p-7 flex justify-between">
+                            <div class="flex flex-col justify-center space-y-2">
+                                <p class="text-[#DDDDDD] text-xl font-semibold">Living Room</p>
+                                <p class="text-gray text-base font-normal">120 Collection</p>
+                            </div>
+                            <div class="flex gap-2 items-center">
+                                <p class="text-primary">View Details</p>
+                                <img src="dist/images/arrow.svg" alt="" class="w-4">
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="flex min-h-screen items-center justify-center">
-                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
-                        <div
-                            class="group relative items-center justify-center overflow-hidden cursor-pointer hover:shadow-xl hover:shadow-black/30 transition-shadow">
-                            <div class="h-96 w-72">
-                                <img src="dist/images/bedroom.png" alt="bedroom"
-                                    class="h-full w-full object-cover group-hover:rotate-3 group-hover:scale-125 transition-transform duration-500">
-                            </div>
-                            <div
-                                class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70">
-                                <div
-                                    class="absolute inset-0 flex flex-col items-center justify-center px-9 text-center translate-y-[60%] group-hover:translate-y-0 transition-all duration-500">
-                                    <h1 class="text-3xl font-bold text-white">Beauty</h1>
-                                    <p
-                                        class="text-lg text-white mb-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt commodi
-                                        assumenda libero!</p>
-                                    <button
-                                        class="rounded-full shadow shadow-black/60 bg-neutral-900 py-2 px-3.5 text-sm capitalize text-white">
-                                        See More
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
     </main>
@@ -294,8 +379,8 @@
 
     <!-- Footer Start-->
 
-    <footer class="bg-dark">
-        <div class="container lg:max-w-screen-2xl lg:px-14">
+    <footer>
+        <div class="container bg-dark lg:max-w-screen-2xl lg:px-14">
             <div class="py-20">
                 <div class="text-center">
                     <a href="#home" class="font-medium text-base text-primary pb-3 flex justify-center"><img
