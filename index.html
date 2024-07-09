@@ -41,25 +41,6 @@
             background-position: center;
         }
 
-        /* .img-box p .title {
-            color: black;
-            position: absolute;
-            bottom: 0;
-            left: 30px;
-            opacity: 0;
-            transition: bottmom 0.5s;
-        }
-
-        .img-box p .desc {
-            padding-top: 10px;
-            color: black;
-            position: absolute;
-            bottom: 0;
-            left: 30px;
-            opacity: 0;
-            transition: bottmom 0.5s;
-        } */
-
         .img-box .hover-card {
             background-color: #1C1C27;
             position: absolute;
@@ -78,6 +59,23 @@
 
         .img-box:hover .hover-card {
             opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .lg\\:flex {
+                display: block;
+                text-align: center;
+            }
+
+            .img-box {
+                width: 85%;
+                margin: 20px auto;
+                /* Centers the elements horizontally */
+            }
+
+            .img-box:hover {
+                width: 100%;
+            }
         }
     </style>
 
@@ -313,7 +311,7 @@
             </div>
         </section>
         <section class="container lg:max-w-screen-2xl lg:px-14">
-            <div class="my-32">
+            <div class="lg:my-32 my-14">
                 <div class="text-center mb-14">
                     <h3 class="text-primary lg:text-xl text-sm font-semibold pb-2">Get Inspired</h3>
                     <h2 class="lg:text-4xl text-2xl font-semibold pb-2">Room Collections</h2>
@@ -372,7 +370,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="pt-32 flex justify-between">
+                <div class="pt-32 lg:flex justify-between">
                     <div class="flex flex-col gap-2 w-[332px]">
                         <h3 class="text-primary text-xl font-semibold leading-7">What Are They Saying</h3>
                         <h2 class="text-dark font-semibold text-4xl leading-10">Happy Customers</h2>
@@ -385,7 +383,7 @@
                             <img src="dist/images/arrow.svg" alt="">
                         </div>
                     </div>
-                    <div class="flex gap-7">
+                    <div class="lg:flex gap-7">
                         <div class="bg-white w-[435px] p-7 rounded-3xl">
                             <div class="flex gap-3 items-center">
                                 <div>
@@ -526,14 +524,14 @@
     <footer>
         <div class="container bg-dark lg:max-w-screen-2xl lg:px-14">
             <div class="py-20">
-                <div class="text-center">
-                    <a href="#home" class="font-medium text-base text-primary pb-3 flex justify-center"><img
+                <div class="lg:text-center">
+                    <a href="#home" class="font-medium text-base text-primary pb-3 flex lg:justify-center pl-6"><img
                             src="dist/images/lightlogo.svg" alt="">
                     </a>
-                    <p class="text-gray text-base font-normal">Copyright © 2022. All Rights Reserved.</p>
+                    <p class="text-gray text-base font-normal pl-6">Copyright © 2022. All Rights Reserved.</p>
                 </div>
-                <div class="w-full flex flex-wrap justify-center gap-40 pt-14">
-                    <div class="w-auto mb-6 text-center">
+                <div class="lg:w-full w-[200px] flex flex-wrap p-6 justify-center lg:gap-40 pt-14">
+                    <div class="lg:w-auto w-[200px] mb-6 text-start">
                         <h5 class="font-medium text-base mb-2 text-white">Page Menus</h5>
                         <ul>
                             <li class="mb-1"><a href="#"
@@ -548,7 +546,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="w-auto mb-6 text-center">
+                    <div class="lg:w-auto w-[200px] mb-6 text-start">
                         <h5 class="font-medium text-base mb-2 text-white">Our Services</h5>
                         <ul>
                             <li class="mb-1"><a href="#" class="text-gray text-base font-normal hover:opacity-80">Design
@@ -563,7 +561,7 @@
                                     Center</a></li>
                         </ul>
                     </div>
-                    <div class="w-auto mb-6 text-center">
+                    <div class="lg:w-auto w-[200px] mb-6 text-start">
                         <h5 class="font-medium text-base mb-2 text-white">Support</h5>
                         <ul>
                             <li class="mb-1"><a href="#" class="text-gray text-base font-normal hover:opacity-80">Help
@@ -578,7 +576,7 @@
                                     class="text-gray text-base font-normal hover:opacity-80">FAQ</a></li>
                         </ul>
                     </div>
-                    <div class="w-auto mb-6 text-center">
+                    <div class="lg:w-auto w-[200px] mb-6 text-start">
                         <h5 class="font-medium text-base mb-2 text-white">Our Social</h5>
                         <ul>
                             <li class="mb-1"><a href="#"
